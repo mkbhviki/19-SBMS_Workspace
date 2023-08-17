@@ -1,0 +1,25 @@
+package in.Mritunjay;
+
+import java.lang.reflect.Field;
+
+public class test2 {
+	
+	public static void main(String[] args) throws Exception {
+		
+		Class<?> clz=Class.forName("in.Mritunjay.BillCollector");
+		
+		Object obj=clz.newInstance();
+		
+		BillCollector bc =(BillCollector)obj;
+		
+		Field field = clz.getDeclaredField("payment");
+		
+		field.setAccessible(true);
+		
+		field.set(obj, new DebitcardPayment());//injecting Value to Variable
+		
+		
+		bc.collectPayment(2000.22);
+	}
+
+}
