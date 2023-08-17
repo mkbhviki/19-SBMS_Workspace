@@ -1,0 +1,15 @@
+package in.Mritunjay;
+
+public class BillCollector {
+	
+	private IPayment payment;
+	
+	public void collectPayment(double amount) {
+		
+		String Status = payment.pay(amount);
+		
+		System.out.println(Status);
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package in.Mritunjay;
+
+public class Creditcardpayment implements IPayment {
+
+	@Override
+	public String pay(double amount) {
+		
+		return "Payment Sussesfull";
+	}
+
+}

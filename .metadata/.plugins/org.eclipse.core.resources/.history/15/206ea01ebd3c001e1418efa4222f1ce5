@@ -1,0 +1,16 @@
+package in.Mritunjay;
+
+public class test {
+
+	public static void main(String[] args) {
+		
+		BillCollector billCollector = new BillCollector();
+		
+		//injecting creditcard obj into BillCollector (Setter Injection)
+		billCollector.setPaymrnt(new Creditcardpayment());
+		
+		billCollector.collectPayment(1500.00);
+		 
+	}
+
+}
