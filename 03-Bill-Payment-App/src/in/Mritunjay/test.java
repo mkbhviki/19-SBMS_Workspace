@@ -7,7 +7,7 @@ public class test {
 		BillCollector billCollector = new BillCollector();
 
 		// injecting creditcard obj into BillCollector (Setter Injection)
-		billCollector.setPaymrnt(new UpiPayment());
+		billCollector.setPayment(new UpiPayment());
 		billCollector.collectPayment(14000.25);
 
 		// injecting creditcard obj into BillCollector (Constructor Injection)
