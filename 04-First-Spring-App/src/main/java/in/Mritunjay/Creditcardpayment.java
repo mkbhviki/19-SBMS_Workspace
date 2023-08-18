@@ -1,6 +1,10 @@
 package in.Mritunjay;
 
 public class Creditcardpayment implements IPayment {
+	
+	public Creditcardpayment() {
+		System.out.println("Creditcardpayment :: Constructor");
+	}
 
 	
 	public String pay(double amount) {

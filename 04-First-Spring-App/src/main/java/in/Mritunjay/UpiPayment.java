@@ -1,6 +1,10 @@
 package in.Mritunjay;
 
 public class UpiPayment implements IPayment {
+	
+	public UpiPayment() {
+		System.out.println("UpiPayment :: Constructor");
+	}
 
 	
 	public String pay(double amount) {

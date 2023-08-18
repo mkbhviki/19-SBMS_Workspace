@@ -8,7 +8,8 @@
 	<bean id="debitCard" class="in.Mritunjay.DebitcardPayment"/>
 	<bean id="upi" class="in.Mritunjay.UpiPayment"/>
 	<bean id="billCollector" class="in.Mritunjay.BillCollector">
-	  <property name="payment" ref="debitCard"/>
+	  <property name="payment" ref="debitCard"/>  <!-- use for setter injection-->
+	  <constructor-arg name="payment" ref="upi"></constructor-arg>
 	
 	</bean>
 	
